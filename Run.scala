@@ -1,0 +1,1 @@
+/**  * Created by jayachandranj on 1/13/17.  */object Run {implicit class intTimes(x:Int){  def times [A](f: =>A):Unit={    def loop(current : Int):Unit =    if(current>0){      f;      loop(current-1)    };    loop(x)  }}}
